@@ -85,7 +85,7 @@
 		
 	<header class="header menu_2">
 		
-		<div id="logo">
+		<div id="logo" class="d-none d-sm-block">
 			<a href="index.html"><img src="img/logo_barc.png" width="128" height="auto" alt=""></a>
 		</div>
 		<ul id="top_menu">
@@ -710,8 +710,39 @@ $(document).ready(function(){
                 url: BASE_URL,
                 data: {"name":name,"email":email,"whatsapp":whatsapp,"location":location,"landing_page":"Sylhet"},
                 success: function(response){
-                    console.log(response);
-                    $("#request_form_wrapper").html("<h1>Your Request Confirmed. Our Team will contact you soon when Live session start</h1>");
+                	// $("#payment").show();
+                    
+                    $("#request_form_wrapper").html(`<div class="modal-content">
+						      <div class="modal-header">
+						        <h2 class="modal-title" id="payment_method">
+						        	Payment Methods
+						      	</h2>
+						        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						      </div>
+						      <div class="modal-body">
+						        <h4 class="payment_modal_heading">
+						        	Please complete your registration by paying 1200 Tk. <br> <br>We have a merchant where you can pay.  Our contact no is a <strong>merchant</strong> number, so you should pay through the <strong style="color: red;">"Payment" </strong> option of the bKash. <br> <br>Please write <strong>"BARC"</strong> in the reference code during payment.
+						        	<br><br>
+						        	In case you face any problem, call us. <br> <a href="#" class="copy">(01617-302012)</a>
+						        </h4>
+						        <hr>
+						        <div class="row">
+						        	<div class="col-md-12 col-sm-12">
+						        		<div class="row">
+						        			<div class="col-md-3 col-sm-2">
+						        				<img src="img/bKash_logo.png" style="width:100%;">
+						        			</div>
+						        			<div class="col-md-9 col-sm-10">
+						        				<div style="display: none;">
+						        					<input type="text" value="01872657788" id="myInput">
+						        				</div>
+						        				<h5 class="text-center"><a href="#" onclick="myFunction()" id="myBtn">01872-657788</a></h5>
+						        			</div>
+						        		</div>
+						        		
+						        	</div>
+						        </div>						         
+						      </div>`);
                 },
                 error: function(error){
                     console.log(error);
