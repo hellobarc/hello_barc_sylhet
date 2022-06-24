@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+	<a href="#" class="copy">copy text</a>
+	<input type="hidden" id="input_box" name="">
+
+	<script type="text/javascript">
+		jQuery(document).ready(function(){
+		jQuery(".copy").click(function(){
+			var $temp = $("#input_box");
+		 jQuery("").append($temp);
+		 $temp.val(jQuery(".copy").text()).select();
+		 document.execCommand("copy");
+		 $temp.remove();
+		});
+	});
+	</script>
+</body>
+</html>

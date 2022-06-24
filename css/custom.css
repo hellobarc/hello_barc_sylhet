@@ -1,0 +1,38 @@
+/*============================================================================================*/
+/* Your custom styles below */
+/*============================================================================================*/
+.register_video{
+	height: 50%;
+}
+.video_reviews_heading {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+}
+.summary{
+	font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 50px;
+}
+#payment{
+    z-index: 9999999;
+}
+.modal{
+    z-index: 9999999 !important;
+}
+.payment_li{
+        
+    }
+.payment_modal{
+    z-index: 99999 !important;
+}
+@media only screen and (max-width: 412px) {
+    li.payment_li{
+        margin-top: 15px;
+        margin-left: 100px;
+    }
+    .video_margin{
+        margin-top: 10px;
+    }
+}
