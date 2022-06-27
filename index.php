@@ -470,7 +470,7 @@
 									<div class="rev-content">
 										
 										<div class="rev-info">
-											Yasser Ahmed – Jan 03, 2022:
+											Neha – Jan 03, 2022:
 										</div>
 										<div class="rev-text">
 											<p>
@@ -486,7 +486,7 @@
 									<div class="rev-content">
 										
 										<div class="rev-info">
-											Hridoy Ahasan – Feb 20, 2022:
+											Jannatul – Feb 20, 2022:
 										</div>
 										<div class="rev-text">
 											<p>
